@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wochenbericht KW07 2026, Mattia Tuor, Lernender Informatiker EFZ Fachrichtung Applikationsentwickler</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <meta name="msapplication-TileImage" content="favicon.png">
+</head>
+
+<body>
+
+    <!-- - - - - - - - - - - - Kopfzeile Start - - - - - - - - - - - -->
+    <header class="fade-in-up">
+
+        <!-- Logo Start -->
+        <a href="index.html">
+            <div class="logo">
+                <img src="images/tuor.mattia.bild.jpg" alt="Foto von Mattia Tuor">
+            </div>
+        </a>
+        <!-- Logo Ende -->
+
+        <!-- Text Start -->
+        <div class="titel">
+            <h1>Wochenbericht KW07 2026</h1>
+            Mattia Tuor<br>
+            Lernender Informatiker EFZ Fachrichtung Applikationsentwickler
+        </div>
+        <!-- Text Ende -->
+
+        <!-- Navigation Start -->
+        <nav>
+            <div class="arrow"><a id="back" title="Back"><img src="images/arrow_back.png"></a></div>
+            <div class="overview"><a href="index.html" title="Overview"><img src="images/hamburger.png"></a></div>
+            <div class="arrow"><a id="next" title="Next"><img src="images/arrow_next.png"></a></div>
+        </nav>
+        <!-- Navigation Ende -->
+
+    </header>
+    <!-- - - - - - - - - - - - Kopfzeile Ende - - - - - - - - - - - -->
+
+    <!-- - - - - - - - - - - - Inhalt Start - - - - - - - - - - - -->
+    <main>
+        <!-- - - - - - - - - - - - Erste Spalte Start - - - - - - - - - - - -->
+        <section class="fade-in-up">
+
+            <!-- Beitrag Wochenbericht Start -->
+            <article class="fade-in-up">
+                <h2>Automatisierte Verarbeitung von E-Mail-Dateien mit einer .NET Console-Anwendung</h2>
+                <img src="images/Microsoft_.NET_logo.svg.png" alt="Microsoft .NET Logo">
+                <legend>Microsoft .NET Logo</legend>
+                <h4>In vielen Unternehmen sammeln sich täglich grosse Mengen an E-Mail-Dateien, 
+                    sei es im Format .eml oder .msg. Das manuelle Umbenennen dieser Dateien, 
+                    um sie übersichtlich zu organisieren, ist zeitaufwendig und fehleranfällig. 
+                    Ziel dieses Projekts war es, eine einfache, portable Console-App zu entwickeln, 
+                    die E-Mail-Dateien automatisch erkennt, Metadaten ausliest und daraus sichere, 
+                    konsistente Dateinamen generiert. Dabei stand Stabilität, Nutzerfreundlichkeit und die Vermeidung externer Abhängigkeiten im Vordergrund.
+                </h4>
+                <h3>Ordnerüberwachung und Dateiverarbeitung</h3>
+                <p>Die Basisfunktion der Anwendung ist die Überwachung eines definierten Ordners. Neue Dateien werden in Echtzeit erkannt, 
+                   wobei besondere Vorsicht geboten ist: Beim Kopieren von E-Mails kann die Datei noch gesperrt sein. Um Abstürze zu vermeiden, 
+                   implementiert die App einen Retry-Mechanismus, der wiederholt prüft, ob die Datei zugänglich ist, bevor sie weiterverarbeitet wird.
+                   Zusätzlich wird ein Logging-System eingesetzt. Jede erkannte Datei, erfolgreiche Umbenennung oder auftretende Fehler wird mit Zeitstempel dokumentiert. 
+                   So kann der Nutzer jederzeit nachvollziehen, welche Dateien verarbeitet wurden und ob Probleme aufgetreten sind. Dieser Ansatz erleichtert nicht nur die Wartung, 
+                   sondern erhöht auch die Zuverlässigkeit der Anwendung.
+                </p>
+                <h3>Metadaten aus E-Mails auslesen und sichere Dateinamen generieren</h3>
+                <p>Nachdem eine Datei zugänglich ist, werden wichtige Metadaten wie Betreff, Absender und Datum ausgelesen. 
+                   Diese Informationen bilden die Grundlage für die automatische Dateinamen-Generierung. Besondere Herausforderungen sind:
+                   Sonderzeichen entfernen: Zeichen wie *, ? oder : sind in Windows-Dateinamen nicht erlaubt.
+                   Längenbegrenzung: Lange Betreffzeilen werden gekürzt, um die maximale Pfadlänge nicht zu überschreiten.
+                   Fallback-Namen: Fehlen Metadaten, wird ein Standardname mit Zeitstempel erstellt, um Duplikate zu vermeiden.
+                   Die Anwendung wendet diese Regeln konsequent an, sodass die umbenannten Dateien einheitlich, lesbar und sortierbar bleiben. 
+                   Dies spart dem Nutzer erheblich Zeit und reduziert Fehler beim Zugriff auf die E-Mail-Archive.
+                </p>
+
+                <h3>Fazit</h3>
+                <p>Das Projekt zeigt, wie auch kleine, portable Tools mit .NET Console-Anwendungen grosse Hilfe sein können. 
+                   Durch die Kombination von Ordnerüberwachung, robustem Fehlerhandling und automatisierter Dateinamen-Generierung wird der Arbeitsaufwand deutlich reduziert, 
+                   während gleichzeitig die Zuverlässigkeit steigt. Die Anwendung ist leicht weiterzugeben, benötigt keine Installation und kann sofort auf verschiedenen Rechnern eingesetzt werden.
+                   Insgesamt verdeutlicht das Projekt die Wichtigkeit von automatisierten Prozessen im Alltag und wie selbst einfache Programme komplexe Alltagsaufgaben sicher und effizient lösen können.
+                </p>
+                </article>
+            <!-- Beitrag Wochenbericht Ende -->
+
+        </section>
+        <!-- - - - - - - - - - - - Erste Spalte Ende - - - - - - - - - - - -->
+
+
+        <!--- - - - - - - - - - - Zweite Spalte Start - - - - - - - - - - - -->
+        <section class="fade-in-up">
+
+            <!-- Tagesreflexionen Start -->
+            <h2>Tagesreflexionen</h2>
+            <i>Was ist mir gut gelungen? Wo hatte ich Probleme? Was habe ich heute gelernt? Was würde ich anders machen?
+                Was würde ich wieder so machen? Wie habe ich mich gefühlt? Wie haben andere mich erlebt?</i><br><br>
+            <hr>
+            <strong>ZLI, Montag, 09. Februar 2026</strong><br>
+            Ich habe die automatische Umbenennung getestet und gesehen, dass alle Projektteile gut zusammenarbeiten. 
+            Logging und Tests helfen mir, den Überblick zu behalten. Ich merke, dass eine strukturierte Planung und sorgfältige Arbeit wichtig sind, 
+            damit kleine Probleme früh auffallen. Die Anwendung läuft stabil, und ich kann die nächsten Schritte gut vorbereiten.
+            <hr>
+            <strong>ZLI, Dienstag, 10. Februar 2026</strong><br>
+            Ich habe die Konfiguration über die config.json umgesetzt. Ich merke, 
+            dass die Anwendung dadurch flexibler und benutzerfreundlicher wird. Fehler lassen sich früh erkennen und im Log festhalten. 
+            Klare Strukturen erleichtern mir die Arbeit und verhindern Verwirrung. Das Projekt ist jetzt übersichtlicher, stabiler und leichter anpassbar für andere Nutzer.
+            <hr>
+            <strong>ZLI, Mittwoch, 11. Februar 2026</strong><br>
+            Ich habe die Dokumentation und Präsentation fertiggestellt und das Projekt abgeschlossen. Ich sehe, wie viele kleine Schritte nötig waren, 
+            bis alles zuverlässig funktioniert. Geduld, kontinuierliche Arbeit und klare Strukturen haben den Erfolg möglich gemacht. Ich bin stolz, 
+            dass mein Tool stabil läuft und praxisnah ist, und dass sich die Mühe der vergangenen Tage gelohnt hat.
+            <hr>
+            <strong>ZLI, Donnerstag, 12. Februar 2026</strong><br>
+            Heute haben ich und andere Lernende, die ihr Porjekt ebenfalls abgeschlossen haben, als Gruppe an einer Präsentation gearbeitet.
+            Es ging um verschiedene Projektmethoden. Wir konnten im Team gut zusammenarbeiten und haben uns gegenseitig gut unterstützt. 
+            Es war sehr spannend und ich konnte neue Methoden kennenlernen. Leider fühlte ich mich nicht so gut und musste dann schon früher nach Hause gehen.
+            
+            <hr>
+            <strong>ZLI, Freitag, 13. Februar 2026</strong><br>
+            Heute habe ich den Tag mit der Weiterarbeit am Gruppenauftrag gestartet. Wir haben die Dokumentation und Präsentation weiter ausgearbeitet und verfeinert.
+            Wir haben wieder gut zusammengearbeitet und konnten durch Teilen des Word-Dokuments alle gut an der Dokumentation arbeiten. 
+            Am Nachmittag habe ich dann noch mit den Github Advanced Aufgaben begonnen, bin aber nicht mehr weit gekommen.
+            <hr>
+            <!-- Tagesreflexionen Ende -->
+
+            <!-- Leistungen Start -->
+            <h2>Leistungen</h2>
+            <i>Mit diesen Leistungen bin ich …</i><br><br>
+            <i>… (sehr) zufrieden:</i>
+            <hr>
+            <strong>ZLI:</strong> Ich konnte mein Projekt erfolgreich abschliessen und habe dabei viel gelernt. 
+            Ich bin zufrieden mit meinem Ergebnis und freue mich berreits mein Porjekt meinem Stiefvater zu zeigen, 
+            da ich das ganze Projekt für ihn entwickelt habe.
+            <hr>
+            <strong>TBZ:</strong> Diese Woche habe ich die TBZ nicht besucht.
+            <hr>
+            <i>… (eher) unzufrieden:</i>
+            <hr>
+            <strong>ZLI:</strong> Ich hätte ein bisschen mehr Zeit für meine Dokumentation einplanen sollen, 
+            da ich jetzt am letzten Tag, an dem eigentlich die Präsentation im Vordergrund stehen sollte, 
+            noch Zeit für die Dokumentation einplanen musste. Ich hatte jedoch trotzdem mehr als genug Zeit für beide Sachen.
+            <hr>
+            <strong>TBZ:</strong> Diese Woche habe ich die TBZ nicht besucht.
+            <hr>
+            <!-- Leistungen Ende -->
+
+            <!-- Ziele Start -->
+            <h2>Ziele</h2>
+            <i>Diese Ziele nehme ich mir für die kommende Woche vor!</i>
+            <hr>
+            <strong>ZLI:</strong> Ich möchhte weiterhin konzentriert und strukturiert arbeiten und mich beim nächsten Projekt darauf achten, 
+            dass ich die Dokumentation nicht unterschätze und genügend Zeit dafür einplane.
+            <hr>
+            <strong>TBZ:</strong> Diese Woche habe ich die TBZ nicht besucht.
+            <hr>
+            <!-- Ziele Ende -->
+             
+            <!-- Bemerkungen Start -->
+            <h2>Bemerkungen</h2>
+            <i>Ergänzungen / Dies hat mich diese Woche besonders geärgert. / Dies hat mich besonders gefreut. / Dies
+                wollte
+                ich noch sagen. / Etc.</i>
+            <hr>
+            Diese Woche habe ich keine Bemerkungen.
+            <hr>
+            <!-- Bemerkungen Ende -->
+
+            <!-- Stimmungen Start !!! Bitte entsprechender Radiobutton auf «checked="checked"» setzten !!! -->
+            <h2>Stimmungslage</h2>
+            <hr>
+            <img src="images/icon_happy.png"
+                style="width: 30px; height: 30px; vertical-align: -20px;">&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="stimmungslage" checked="checked">&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="stimmungslage">&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="stimmungslage">&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="stimmungslage">&nbsp;&nbsp;&nbsp;
+            <img src="images/icon_sad.png" style="width: 30px; height: 30px; vertical-align: -20px;">
+            <hr>
+            <!-- Stimmungen Ende -->
+
+        </section>
+        <!-- - - - - - - - - - - - Zweite Spalte Ende - - - - - - - - - - - -->
+    </main>
+    <!-- - - - - - - - - - - - Inhalt Ende - - - - - - - - - - - -->
+
+
+    <!-- - - - - - - - - - - - Fusszeile Start - - - - - - - - - - - -->
+    <footer class="fade-in-up">
+        <strong>Wochenbericht KW07 2026</strong><br>
+        Mattia Tuor<br>
+        Lernender Informatiker EFZ Fachrichtung Applikationsentwickler
+    </footer>
+    <!-- - - - - - - - - - - - Fusszeile Ende - - - - - - - - - - - -->
+
+    <script src="js/fadein.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+
+</html>
